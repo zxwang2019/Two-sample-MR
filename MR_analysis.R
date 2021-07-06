@@ -4,15 +4,15 @@ library(ggplot2)
 args<-commandArgs(T)
 
 exposure_dat <- read_exposure_data(
-filename = args[1],
-sep = "\t",
-snp_col = "SNP",  
-beta_col = "Effect",  
-se_col = "StdErr",         
-effect_allele_col = "Allele1",
-other_allele_col = "Allele2",
-eaf_col = "Freq1",
-pval_col = "P",
+ filename = args[1],
+ sep = "\t",
+ snp_col = "SNP",  
+ beta_col = "Effect",  
+ se_col = "StdErr",         
+ effect_allele_col = "Allele1",
+ other_allele_col = "Allele2",
+ eaf_col = "Freq1",
+ pval_col = "P",
 )
 
 outcome_dat <- read_outcome_data(
